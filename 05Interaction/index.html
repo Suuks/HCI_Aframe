@@ -26,26 +26,20 @@
         material="src: #wood"
         shadow 
         animation__mouseenter="
-          property: components.material.material.opacity; 
-		  <!-- property: components.material.material.color; !-->
-          type: opacity; 
-          to: 0.5; 
+          <!-- property: components.material.material.opacity; !-->
+		 property: components.material.material.color; 
+          type: color;
+          to: blue;
           startEvents: mouseenter; 
           dur: 500;"
 		 
-        <!--animation__mouseleave="
+        <animation__mouseleave="
           property: components.material.material.color; 
           type: color; 
           to: red; 
           startEvents: mouseleave; 
-          dur: 500;">  !-->
-		  animation__mouseleave="
-		  property: components.material.material.opacity; 
-		  type: opacity; 
-          to: 1; 
-          startEvents: mouseleave; 
-          dur: 200;"
-		  >
+          dur: 500;">
+
 		  
       </a-box>
       <a-box id="myOtherBox" 
