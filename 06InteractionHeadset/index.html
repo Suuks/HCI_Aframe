@@ -18,6 +18,10 @@
       <a-camera>
         <a-entity id="mouseCursor"
           cursor="fuse: true; fuseTimeout: 5000">
+		  <a-animation begin="click" easing="ease-in" attribute="scale"
+               fill="backwards" from="1 1 1" to="2 2 2"></a-animation>
+<a-animation begin="cursor-fusing" easing="ease-in" attribute="scale"
+               fill="forwards" from="2 2 2" to="1 1 1"></a-animation>
         </a-entity>
         <a-ring id="cursorRing" 
           position="0 0 -1"
