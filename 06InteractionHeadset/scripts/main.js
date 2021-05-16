@@ -37,7 +37,7 @@ function grow(){
  	console.log(myOtherBox.object3D.scale);
  }
 
- myOtherBox.addEventListener('click', function(){ // uses a fuse
+ myOtherBox.addEventListener('hoover', function(){ // uses a fuse
  	grow();
 	console.log('grew');
 });
