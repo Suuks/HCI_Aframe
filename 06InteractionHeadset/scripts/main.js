@@ -49,7 +49,7 @@ function shrink(){
  	console.log(myOtherBox.object3D.scale);
  }
 
- myOtherBox.addEventListener('hoover', function()){ // uses a fuse
+ myOtherBox.addEventListener('hoover', function(){ // uses a fuse
  	shrink();
 	console.log('shrunk');
 });
